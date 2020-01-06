@@ -4,7 +4,6 @@ import copy
 def dfs_visit(nodes, adjacency_matrix, u):
     global time
     time += 1
-    u.d = time
     u.color = 'Grey'
     for i in range(len(adjacency_matrix)):
         if adjacency_matrix[u.value, i] == 1 and nodes[i].color == 'White':

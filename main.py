@@ -21,7 +21,7 @@ def main():
     p_array = np.loadtxt("CANCER/probabilities.txt", delimiter=',')
     bayesian_network.set_matrix(adjacency_matrix)
     nodes = bayesian_network.get_nodes()
-    prob = []
+    prob = []  # array di array
     prob_file = open('CANCER/prob_dataset.csv', 'rt')
     prob_reader = csv.reader(prob_file, delimiter=',')
     for i in range(len(nodes)):
@@ -34,7 +34,10 @@ def main():
     x = []
     y = []
     tries = 10
-    for n in range(10, 1011, 100):
+    start = 10
+    end = 1011
+    iter = 100
+    for n in range(start, end, iter):
         x.append(n)
         y_tries = []
         for j in range(tries):

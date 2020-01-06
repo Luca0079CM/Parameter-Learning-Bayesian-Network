@@ -4,10 +4,9 @@ import numpy as np
 class Node:
     def __init__(self, value):
         self.value = value
-        self.color = 'White'
-        self.d = 0
-        self.f = 0
         self.pi = []
+        self.color = 'White'
+        self.f = 0
 
     def get_parents(self):
         return self.pi

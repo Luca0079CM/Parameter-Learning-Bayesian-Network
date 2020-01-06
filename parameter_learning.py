@@ -62,7 +62,7 @@ def parameter_learning(nodes, p_array, dataset, n):
         Nijk_array.append(tmp1_Nijk)
         Nij_array.append(tmp_Nij)
 
-    # Usando gli Nij-Nijk e gli aij-aijk trova i tetaijk
+    # Usando gli Nij-Nijk e gli aij-aijk trova i parametri
     qn_array = []
     for i in range(len(nodes)):
         parents = nodes[i].get_parents()
