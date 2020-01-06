@@ -44,6 +44,7 @@ def main():
             dataset = dg.dataset_gen(n, adjacency_matrix, nodes, prob)
             y_tries.append(pe.parameter_learning(nodes, p_array, dataset, n))
         y.append(average(y_tries))
+
     print("x: ", x)
     print("y: ", y)
     plt.title("Learning Curve Jensen-Shennon Divergency")
