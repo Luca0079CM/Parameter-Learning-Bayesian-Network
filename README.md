@@ -1,5 +1,5 @@
 # Parameter-Learning-Bayesian-Network
-Data una rete bayesiana e (le probabilità condizionate dei nodi di tale rete) il programma genera un dataset casuale con un numero n di tuple via via crescente. Usando tali dataset vengono ricavati i parametri che vengono poi confrontati con le probabilità iniziali attraverso la divergenza di Jensen-Shennon. Per ogni n vengono fatte 10 generazioni di dataset e di esse viene presa la media della divergenza per evitare casi particolari. Infine i risultati vengono salvati in un vettore y e visualizzati su un grafo per formare una learning curve.
+Data una rete bayesiana e le probabilità condizionate dei nodi di tale rete il programma genera un dataset casuale con un numero n di tuple via via crescente. Usando tali dataset vengono ricavati i parametri che vengono poi confrontati con le probabilità iniziali attraverso la divergenza di Jensen-Shennon. Per ogni n vengono fatte 10 generazioni di dataset e di esse viene presa la media della divergenza per evitare casi particolari. Infine i risultati vengono salvati in un vettore y e visualizzati su un grafo per formare una learning curve.
 
 bayesian_net.py:
 
